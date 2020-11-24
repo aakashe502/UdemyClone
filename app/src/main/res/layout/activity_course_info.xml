@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseInfoActivity">
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rela1"
+                >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayout"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_height="450dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/backbtn"
+                    android:src="@drawable/ic_back_btn"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/backbtn"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="title"
+                    android:textColor="@android:color/white"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="description"
+                    android:textColor="@android:color/white"
+
+                    android:backgroundTint="@android:color/holo_blue_dark"
+                    android:background="@drawable/buttons"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/title"
+                    android:id="@+id/desc"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc"
+                    android:id="@+id/instructor"
+                    android:textColor="@android:color/white"
+                    android:scrollbarSize="30dp"
+                    android:text="Created By instructor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:textColor="@android:color/white"
+
+                    android:layout_below="@+id/instructor"
+                    android:outlineSpotShadowColor="@color/design_default_color_secondary_variant"
+                    android:text="added on"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date"
+                    android:text="price"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:id="@+id/price"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/price"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/date"
+                    android:text="price"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:id="@+id/original"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:textSize="30dp"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:id="@+id/cname"
+                android:layout_marginTop="350dp"
+                android:background="@android:color/holo_red_light" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cname"
+                android:id="@+id/l12"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Now"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_buttons"
+                    android:id="@+id/buynow"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="1"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WishList"
+                    android:id="@+id/wishlist"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_buttons"
+                    android:layout_margin="10dp"
+
+                    android:textSize="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PlayList"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/custom_buttons"
+                    android:id="@+id/playlist"
+                    android:layout_below="@+id/l12"
+                    android:layout_margin="20dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/playlist"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="30dp"
+
+                        android:text="Target Audience"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardElevation="3dp"
+                        app:contentPadding="5dp"
+                        >
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:id="@+id/target"
+                            android:text="target"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Requirements"
+                        android:textSize="30dp"
+                        />
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="3dp"
+                        app:contentPadding="5dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Requirements"
+                            android:id="@+id/requirements"
+                            android:textSize="20dp"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="learnwhat"
+                        android:textSize="30dp"
+                        />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="3dp"
+                        app:contentPadding="5dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="What will you learn"
+                            android:id="@+id/learn"
+                            android:textSize="20dp"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+   </ScrollView>
+
+
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/recyclerview"-->
+<!--        android:paddingTop="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/appbar1"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--        />-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

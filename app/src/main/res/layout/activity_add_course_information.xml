@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/relative2"
+    tools:context=".Activities.AddCourseInformation">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+       <EditText
+           android:layout_marginTop="50dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/Course_TItle"
+           android:hint="Add a Suitable Title For your App ex .
+          The Complete Android N| Developer Course"
+           android:textSize="15dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:fontFamily="@font/crafty_girls"
+           />
+
+       <TextView
+           android:layout_marginTop="50dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/type"
+           android:hint="CHoose A Suitable Title"
+           android:textSize="15dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:fontFamily="@font/crafty_girls"
+           android:drawableEnd="@drawable/ic_arrow_forward_gray"
+           />
+
+            <EditText
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/whatlearn"
+                android:hint="What will your COurse Teach Students Give a Reason to Students for endorsment"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/crafty_girls"
+                />
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="300dp"
+           android:layout_height="200dp"
+           android:src="@drawable/ic_person_gray"
+           android:id="@+id/pic"
+           />
+
+            <EditText
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Requirements"
+                android:hint="Pre Requisites For Students"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/crafty_girls"
+                />
+
+            <EditText
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/target"
+                android:hint="add target students whom your app targets"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/crafty_girls"
+                />
+
+
+
+       <EditText
+           android:layout_marginTop="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/price"
+           android:hint="if course if free write 0 else amount"
+           android:textSize="15dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:fontFamily="@font/crafty_girls"
+
+           />
+
+       <EditText
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/discounted"
+           android:hint="write original price make sure to make it less than above price"
+           android:textSize="15dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:fontFamily="@font/crafty_girls"
+           />
+
+       <EditText
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/upiid"
+           android:hint="write upi id to receive payments"
+           android:textSize="15dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:fontFamily="@font/crafty_girls"
+           />
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="CONTINUE"
+           android:id="@+id/movetonext"
+           android:layout_margin="16dp"
+           android:layout_marginBottom="30dp"
+           android:background="@drawable/buttons"
+           android:backgroundTint="@android:color/holo_red_dark"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

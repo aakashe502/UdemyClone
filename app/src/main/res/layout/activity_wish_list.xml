@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WishList">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/mat"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/appbar"
+            app:menu="@menu/top_app_bar"
+            app:navigationIcon="@drawable/ic_back_btn"
+            style="@android:style/Widget.Toolbar"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_below="@+id/mat"
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerview"
+        android:layoutAnimation="@anim/layout_slideleft"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/bottom_navigation"
+        tools:listitem="@layout/new_wishlisted"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="?android:attr/windowBackground"
+        />
+
+
+</RelativeLayout>

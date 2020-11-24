@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackcolor"
+    tools:context=".MainActivity">
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textEmailAddress"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:id="@+id/emailEt"
+      android:drawableStart="@drawable/ic_mail_white"
+      android:layout_centerVertical="true"
+      android:textColor="@color/colorWhite"
+      android:hint="Email"
+      android:textColorHint="@color/colorWhite"
+      android:textSize="20dp"
+      />
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/passwordEt"
+        android:layout_below="@+id/emailEt"
+    android:drawableStart="@drawable/ic_lock_white"
+    android:layout_centerVertical="true"
+        android:hint="Password"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+    android:textSize="20dp"
+    />
+<Button
+    android:id="@+id/signin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/passwordEt"
+  android:background="@drawable/buttons"
+    android:text="Sign In"
+    android:minWidth="160dp"
+    android:layout_centerHorizontal="true"
+    android:textAlignment="center"
+    android:gravity="center"
+    />
+    <TextView
+        android:id="@+id/noAccountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorWhite"
+        android:text="Not Have Account ?Register"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

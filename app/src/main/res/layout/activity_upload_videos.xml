@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UploadVideos">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_view"
+        app:resize_mode="fit"
+        app:hide_on_touch="true"
+        app:show_timeout="5000"
+        app:rewind_increment="10000"
+        app:fastforward_increment="10000"
+        app:use_controller="true"
+        android:background="@android:color/background_dark"
+        app:player_layout_id="@layout/exo_simple_player_view"
+
+        app:controller_layout_id="@layout/custom_controller"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_view"
+        android:id="@+id/linear"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Give Title of Video"
+            android:background="#FAFAFA"
+
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Click to choose Video"
+            android:background="#FAFAFA"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/title"
+            android:textColor="@android:color/black"
+            android:id="@+id/choose"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Click to add Videos in Sequences"
+            android:background="#FAFAFA"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/choose"
+            android:textColor="@android:color/black"
+            android:id="@+id/upload"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/progress_bar"
+        android:layout_centerInParent="true"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:id="@+id/line1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Current Uploaded"
+            android:textSize="24dp"
+            android:id="@+id/current"
+            android:layout_weight="0.3"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Publish Course"
+            android:id="@+id/loaded"
+            android:layout_weight="0.7"
+            />
+
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/item_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/line1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/video_row_recycler"
+            />
+
+
+
+
+</RelativeLayout>

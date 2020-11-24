@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddnewCourse">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image"
+        android:scaleType="centerCrop"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bungee_inline"
+        android:text="Welcome to our App .
+        Read the rules to get Started"
+        android:textSize="30dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/info"
+            android:layout_below="@+id/text"
+            android:fontFamily="@font/crafty_girls"
+            android:textColor="@android:color/white"
+            android:text="Are Yout Ready to Devote To Learning and Teaching in our APP Lets Get Started"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/next"
+        android:background="@null"
+        android:text="CONTINUE"
+        android:fontFamily="@font/bungee_inline"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        />
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/tabs"
+        android:background="?android:attr/windowBackground"
+        />
+</RelativeLayout>
+
+
+
+
+<!--  <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="80dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/courseimage"
+        android:layout_width="96dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_height="96dp"
+        android:src="@drawable/ic_person_white"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <EditText
+        android:layout_below="@+id/courseimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/titlecourse"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_person_white"
+        android:textColor="@color/colorWhite"
+        android:hint="Title"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_below="@+id/titlecourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/description"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_person_white"
+        android:textColor="@color/colorWhite"
+        android:hint="Description"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        android:text="Select type"
+        android:layout_below="@+id/description"
+        android:textSize="20dp"
+        android:drawableEnd="@drawable/ic_arrow_forward_gray"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectvideo"
+        android:layout_margin="20dp"
+        android:text="Choose TrailerofVideo"
+        android:layout_below="@+id/type"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addc"
+        android:layout_below="@+id/selectvideo"
+        android:background="@drawable/buttons"
+        android:text="Add Course"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+       />
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addc"
+        android:id="@+id/video"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/tabs"
+        android:background="?android:attr/windowBackground"
+        />  -->

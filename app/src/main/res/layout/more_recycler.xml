@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_person_white"
+
+            android:id="@+id/image"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advanced android development with complete explanation"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:id="@+id/topicname"
+            android:maxLines="3"
+            android:lineSpacingExtra="7dp"
+            android:padding="15dp"
+            />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RS 500"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/original"
+                    android:textColor="#000"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RS 500"
+                    android:id="@+id/price"
+                    android:textSize="17dp"
+
+                    android:layout_marginLeft="14dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Course"
+            android:layout_marginTop="5dp"
+            android:id="@+id/start"
+            android:textSize="20dp"
+            android:textColor="#57c4E5"
+            android:padding="8dp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".RegisterInstructor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:id="@+id/toolbar"
+        android:background="@color/colorAccent">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back_btn"
+            android:background="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Instructor"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+
+        android:layout_height="96dp"
+        android:src="@drawable/ic_person_white"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <EditText
+        android:layout_below="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/nameEt"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_person_white"
+        android:textColor="@color/colorWhite"
+        android:hint="Name"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_below="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/emailEt"
+        android:layout_margin="15dp"
+        android:drawableStart="@drawable/ic_mail_white"
+        android:textColor="@color/colorWhite"
+        android:hint="Email"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_below="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/passwordEt"
+        android:layout_margin="15dp"
+        android:drawableStart="@drawable/ic_key_white"
+        android:textColor="@color/colorWhite"
+        android:hint="Password"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_below="@+id/passwordEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/phoneEt"
+        android:layout_margin="15dp"
+        android:drawableStart="@drawable/ic_key_white"
+        android:textColor="@color/colorWhite"
+        android:hint="Phone"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="20dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegisterBtn"
+        android:layout_below="@+id/phoneEt"
+        android:background="@drawable/buttons"
+        android:text="Register User"
+        android:layout_margin="10dp"
+        />
+
+
+</RelativeLayout>
